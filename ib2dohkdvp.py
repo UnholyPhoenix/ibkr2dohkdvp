@@ -4,11 +4,9 @@ from datetime import datetime
 import requests
 from decimal import Decimal, ROUND_HALF_UP
 import os
-import glob
 import json
 from pathlib import Path
 import lxml.etree as etree
-import urllib.request
 from collections import OrderedDict
 
 # ========== USER: Edit your personal info here ==========
