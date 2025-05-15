@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="http://edavki.durs.si/Documents/Schemas/Doh_Kdvp_1_8.xsd"
+           xmlns="http://edavki.durs.si/Documents/Schemas/Doh_Kdvp_1_8.xsd"
+           elementFormDefault="qualified">
+    
+    <xs:element name="VlogaDohKdvp">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Zavezanec" type="ZavezanecType"/>
+                <xs:element name="Napovedi">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Napoved" type="NapovedType" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="ZavezanecType">
+        <xs:sequence>
+            <xs:element name="DavcnaStevilka" type="xs:string"/>
+            <xs:element name="Ime" type="xs:string"/>
+            <xs:element name="Priimek" type="xs:string"/>
+            <xs:element name="Naslov" type="xs:string"/>
+            <xs:element name="Posta" type="xs:string"/>
+            <xs:element name="Obcina" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="NapovedType">
+        <xs:sequence>
+            <xs:element name="Leto" type="xs:string"/>
+            <xs:element name="VrstaVrednostnegaPapirja" type="xs:string"/>
+            <xs:element name="Drzava" type="xs:string"/>
+            <xs:element name="Naziv" type="xs:string"/>
+            <xs:element name="DatumNakupa" type="xs:date"/>
+            <xs:element name="StroskiNakupa" type="xs:decimal"/>
+            <xs:element name="VrednostNakupa" type="xs:decimal"/>
+            <xs:element name="DatumProdaje" type="xs:date"/>
+            <xs:element name="StroskiProdaje" type="xs:decimal"/>
+            <xs:element name="VrednostProdaje" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VlogaDohKdvp xmlns="http://edavki.durs.si/Documents/Schemas/Doh_Kdvp_1_8.xsd"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://edavki.durs.si/Documents/Schemas/Doh_Kdvp_1_8.xsd Doh_Kdvp_1_8.xsd">
+    <Zavezanec>
+        <DavcnaStevilka>12345678</DavcnaStevilka>
+        <Ime>Janez</Ime>
+        <Priimek>Novak</Priimek>
+        <Naslov>Ulica 1</Naslov>
+        <Posta>1000</Posta>
+        <Obcina>LJUBLJANA</Obcina>
+    </Zavezanec>
+    <Napovedi>
+        <Napoved>
+            <Leto>2023</Leto>
+            <VrstaVrednostnegaPapirja>DELEZ</VrstaVrednostnegaPapirja>
+            <Drzava>US</Drzava>
+            <Naziv>APPLE INC</Naziv>
+            <DatumNakupa>2023-01-15</DatumNakupa>
+            <StroskiNakupa>10.00</StroskiNakupa>
+            <VrednostNakupa>1000.00</VrednostNakupa>
+            <DatumProdaje>2023-06-15</DatumProdaje>
+            <StroskiProdaje>10.00</StroskiProdaje>
+            <VrednostProdaje>1200.00</VrednostProdaje>
+        </Napoved>
+    </Napovedi>
+</VlogaDohKdvp> 
